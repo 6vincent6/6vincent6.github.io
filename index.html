@@ -22,40 +22,33 @@
  }
  
   #v2 {
- width: 90px;
- height: 90px;
+ width: 80px;
+ height: 80px;
  border-radius: 50%;
  }
  
-  .top {
- text-align: center;
- border-radius: 10px;
- }
- 
-  .all-box {
+  .glass-box {
  background-color: rgba(255, 255, 255, 0.2); /* 白色20%不透明度 */
  backdrop-filter: blur(3px); /* 毛玻璃效果 */
  border: 1px solid rgba(255, 255, 255, 0.2); /* 半透明边框 */
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影增强层次感 */
  border-radius: 12px; /* 保持圆角 */
+ text-align: center;
 }
 
   .block {
  font-size: 18px;
- width: min(90%,600px)
- height: auto;
+ width: min(90%,600px);
  margin: 20px auto;
  padding: 40px;  
  }     
 
-  .web{
+  .nav-links {
  font-size: 20px;
  padding: 20px;
  display: flex;
- width: auto;
  flex-direction: column;
  gap: 1rem;
- text-align: center;
  margin-top: auto;
  border-radius: 10px;  
  }   
@@ -67,8 +60,6 @@
  padding: 20px;
  margin: 0 auto;
  max-width: 1200px;
- padding: 20px;
- height: auto;
 }
 
   .content-block {
@@ -81,7 +72,7 @@
  transition: transform 0.3s ease;
  }
  
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     .center-wrapper {
         flex-direction: column; /* 移动端垂直排列 */
         gap: 20px;
@@ -95,7 +86,7 @@
   </style> 
     </head> 
     <body id="v1"> 
-        <header class="top all-box"> 
+        <header class="glass-box"> 
           <div>
              <a href="https://imgloc.com/image/CTJYF"> 
               <img src="https://i.imgs.ovh/2025/03/09/CTJYF.th.jpeg" alt="Vincent的个人头像" border="0" id="v2">
@@ -106,20 +97,20 @@
           </h1> 
         </header> 
         <div class="center-wrapper block"> 
-            <section class="content-block all-box block"> 
+            <section class="content-block glass-box block"> 
                 <h2>欢迎来到我的个人空间</h2>
                 <p>个人简介: </p>
                 <p>一个普通的音游玩家</p> 
                 <p>web兴趣爱好者</p> 
             </section> 
-            <div class="content-block all-box block"> 
+            <div class="content-block glass-box block"> 
                 <h2>联系方式</h2> 
                 <p>QQ:<a href="https://qm.qq.com/q/3EIGCT4o9W" target="_blank">3556849684</a> </p> 
-                <p>email:<a href="mailto:t8848thj@outlook.com" target="_blank">t8848thj@outlook.com</a> </p> 
-                <p>github:<a href="https://github.com/6vincent6/6vincent6.github.io" target="_blank">6vincent6</a> </p> 
+                <p>Email:<a href="mailto:t8848thj@outlook.com" target="_blank">t8848thj@outlook.com</a> </p> 
+                <p>GitHub:<a href="https://github.com/6vincent6/6vincent6.github.io" target="_blank">6vincent6</a> </p> 
             </div> 
         </div> 
-        <nav class="all-box web"> 
+        <nav class="glass-box nav-links"> 
           <a href="https://v.douyin.com/i5VgvVsM/" target="_blank">我的最新视频</a>
           <a href="https://v.douyin.com/i5q6WnXS/" target="_blank">抖音主页</a> 
           <a href="https://b23.tv/qq0x6nC" target="_blank">B站主页</a> 
