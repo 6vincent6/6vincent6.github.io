@@ -67,6 +67,45 @@
  transition: transform 0.3s ease;
  }
  
+ a {
+  color: #30B649;              /* 默认颜色 */
+  text-decoration: none;       /* 去除下划线 */
+  transition: all 0.3s ease;   /* 添加过渡动画 */
+}
+
+ a:hover {
+  color: #357abd;              /* 悬停颜色 */
+  text-decoration: underline;  /* 悬停下划线 */
+}
+
+ a:active {
+  color: #2a5f8a;              /* 点击时颜色 */
+}
+
+ a:visited {
+  color: #7b61ff;              /* 已访问链接颜色 */
+}
+
+.nav-links a {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+a[target="_blank"]::after {
+  content: "☑";
+  font-size: 0.8em;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
  @media (max-width: 768px) {
     .center-wrapper {
         flex-direction: column; /* 移动端竖直排列 */
